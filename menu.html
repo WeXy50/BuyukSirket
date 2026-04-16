@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#f8f6f3" />
+  <meta name="description" content="Sarıyer Börekçisi ürün listesi ve fiyatları." />
+  <title>Menü — Sarıyer Börekçisi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="menu-page">
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <a href="index.html" class="topbar-back" aria-label="Kategorilere dön">←</a>
+    <div class="topbar-info">
+      <div class="topbar-cat-name" id="topbar-cat-name">Menü</div>
+      <div class="topbar-cat-sub" id="topbar-cat-sub">Sarıyer Börekçisi</div>
+    </div>
+    <div class="topbar-status" id="topbar-status">🟢 Açık</div>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="menu-hero" id="menu-hero">
+    <div class="menu-hero-emoji" id="hero-emoji" aria-hidden="true">🥐</div>
+    <div class="menu-hero-overlay"></div>
+    <div class="menu-hero-title">
+      <h1 id="hero-title">Börekler</h1>
+      <p id="hero-desc">Günlük taze · Fırın çıkışı</p>
+    </div>
+  </div>
+
+  <!-- Menü Gövdesi -->
+  <main class="menu-body" id="menu-body">
+    <!-- JS ile doldurulur -->
+  </main>
+
+  <!-- Alt Bar -->
+  <footer class="bottom-bar">
+    <div class="bottom-brand">
+      <strong>Sarıyer Börekçisi</strong> · Dijital Menü
+    </div>
+    <div class="bottom-status">
+      <div class="status-dot" id="status-dot"></div>
+      <span id="current-time">--:--</span>
+    </div>
+  </footer>
+
+  <script src="menu.js"></script>
+</body>
+</html>
