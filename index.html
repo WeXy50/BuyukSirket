@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Sarıyer Börekçisi — 1989'dan bu yana geleneksel lezzetler. Fırından taze börekler, poğaçalar ve pideler." />
+  <title>Sarıyer Börekçisi — Geleneksel Lezzetler</title>
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     NAVİGASYON
+═══════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Ana navigasyon">
+  <div class="container nav-inner">
+
+    <a href="index.html" class="nav-logo" aria-label="Ana sayfa">
+      <div class="nav-logo-icon" aria-hidden="true">🥐</div>
+      <span class="nav-logo-name">Sarıyer Börekçisi</span>
+    </a>
+
+    <!-- Masaüstü linkleri -->
+    <div class="nav-links" id="nav-links">
+      <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
+      <a href="#neden-biz"  class="nav-link">Neden Biz?</a>
+      <a href="#subeler"    class="nav-link">Şubeler</a>
+      <a href="#iletisim"   class="nav-link">İletişim</a>
+      <a href="subeler.html" class="nav-cta">Menüyü Gör →</a>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+
+    <!-- Hamburger (mobil) -->
+    <button class="nav-hamburger" id="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Mobil menü -->
+<div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+  <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
+  <a href="#neden-biz"  class="nav-link">Neden Biz?</a>
+  <a href="#subeler"    class="nav-link">Şubeler</a>
+  <a href="#iletisim"   class="nav-link">İletişim</a>
+  <a href="subeler.html" class="nav-cta">Menüyü Gör →</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════ -->
+<section class="hero" id="anasayfa">
+  <div class="container hero-inner">
+
+    <!-- Sol: Metin -->
+    <div class="hero-content" data-reveal="left">
+      <div class="hero-badge" data-reveal data-delay="1">
+        ✨ 1989'dan Beri
+      </div>
+
+      <h1 class="hero-title" data-reveal data-delay="2">
+        Fırından Taze,<br/>
+        <em>Gelenekten Gelen</em><br/>
+        Lezzetler
+      </h1>
+
+      <p class="hero-desc" data-reveal data-delay="3">
+        Her sabah taze hazırlanan böreklerimiz, poğaçalarımız ve pidelerimizle 
+        35 yıldır sofralarınızdayız. Kaliteden ödün vermeden, sevgiyle pişiriyoruz.
+      </p>
+
+      <div class="hero-actions" data-reveal data-delay="4">
+        <a href="subeler.html" class="btn btn-primary">
+          Şubemizi Bul →
+        </a>
+        <a href="#hakkimizda" class="btn btn-outline">
+          Biz Kimiz?
+        </a>
+      </div>
+
+      <div class="hero-stats" data-reveal data-delay="5">
+        <div class="hero-stat">
+          <div class="hero-stat-num">35+</div>
+          <div class="hero-stat-label">Yıllık deneyim</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">50+</div>
+          <div class="hero-stat-label">Çeşit ürün</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sağ: Görsel -->
+    <div class="hero-visual" aria-hidden="true" data-reveal="right" data-delay="1">
+      <div class="hero-visual-card">🥐</div>
+
+      <div class="hero-floating-tag">
+        <span class="tag-icon">🔥</span>
+        <div>
+          <div class="tag-text">Her gün taze</div>
+          <div class="tag-sub">Fırından sıcak</div>
+        </div>
+      </div>
+
+      <div class="hero-floating-tag">
+        <span class="tag-icon">⭐</span>
+        <div>
+          <div class="tag-text">El yapımı</div>
+          <div class="tag-sub">Geleneksel tarif</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     HAKKIMIZDA
+═══════════════════════════════════════════════════ -->
+<section class="about section" id="hakkimizda">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Sol: Görsel -->
+      <div class="about-visual" data-reveal>
+        <div class="about-img-frame">🏪</div>
+        <div class="about-badge-float">
+          <div class="about-badge-num">1989</div>
+          <div class="about-badge-label">Kuruluş Yılı</div>
+        </div>
+      </div>
+
+      <!-- Sağ: Metin -->
+      <div class="about-text">
+        <div class="section-label" data-reveal>📖 Hikayemiz</div>
+        <h2 class="section-title" data-reveal data-delay="1">
+          35 Yıllık Börek<br/>Geleneği
+        </h2>
+        <p class="section-desc" data-reveal data-delay="2">
+          1989 yılında İstanbul'da başlayan yolculuğumuzda, kuşaktan kuşağa aktarılan 
+          tariflerimizle aynı özenle, aynı sevgiyle börek yapıyoruz. Her ürünümüz 
+          günlük taze malzemelerle ve el emeğiyle hazırlanmaktadır.
+        </p>
+
+        <div class="about-features" data-reveal data-delay="3">
+          <div class="about-feature">
+            <div class="feature-icon">🌿</div>
+            <div>
+              <div class="feature-name">Doğal Malzeme</div>
+              <div class="feature-desc">Katkısız, taze malzemeler ile her gün hazırlanır</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">🔥</div>
+            <div>
+              <div class="feature-name">Odun Ateşi Fırın</div>
+              <div class="feature-desc">Geleneksel fırınlarımızda eşsiz lezzetler</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">👨‍🍳</div>
+            <div>
+              <div class="feature-name">Usta Eller</div>
+              <div class="feature-desc">Deneyimli ustalarımızın el açması yufkaları</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">🏆</div>
+            <div>
+              <div class="feature-name">Her Gün Taze</div>
+              <div class="feature-desc">Sabah erken saatlerde hazırlanan, fırından sıcak ürünler</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     NEDEN BİZ
+═══════════════════════════════════════════════════ -->
+<section class="why-us section" id="neden-biz">
+  <div class="container">
+    <div style="text-align:center; max-width:560px; margin:0 auto 0;">
+      <div class="section-label" data-reveal style="justify-content:center;">⭐ Farkımız</div>
+      <h2 class="section-title" data-reveal data-delay="1">Neden Sarıyer Börekçisi?</h2>
+      <p class="section-desc" data-reveal data-delay="2" style="margin:0 auto;">
+        Yılların getirdiği deneyimle her ürünümüzü özenle hazırlıyor, 
+        müşterilerimize en iyi lezzeti sunuyoruz.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card" data-reveal data-delay="1">
+        <div class="why-icon">🫙</div>
+        <div class="why-title">Taze Malzeme</div>
+        <div class="why-desc">Her gün temin edilen taze, doğal malzemelerle üretim yapıyoruz. Katkı maddesi kullanmıyoruz.</div>
+      </div>
+      <div class="why-card" data-reveal data-delay="2">
+        <div class="why-icon">⏰</div>
+        <div class="why-title">Erken Hazırlık</div>
+        <div class="why-desc">Sabah 07:00'da fırından çıkan ürünlerimiz, gün boyu taze servis edilir.</div>
+      </div>
+      <div class="why-card" data-reveal data-delay="3">
+        <div class="why-icon">🎯</div>
+        <div class="why-title">Geniş Çeşit</div>
+        <div class="why-desc">Börek, poğaça, pide, açma ve tatlı dahil 50'den fazla ürün çeşidimiz mevcuttur.</div>
+      </div>
+      <div class="why-card" data-reveal data-delay="4">
+        <div class="why-icon">📍</div>
+        <div class="why-title">Kolay Erişim</div>
+        <div class="why-desc">İstanbul'un farklı ilçelerindeki şubelerimizle size yakınız.</div>
+      </div>
+      <div class="why-card" data-reveal data-delay="5">
+        <div class="why-icon">💰</div>
+        <div class="why-title">Uygun Fiyat</div>
+        <div class="why-desc">Kaliteden ödün vermeden, herkesin ulaşabileceği fiyatlarla hizmet veriyoruz.</div>
+      </div>
+      <div class="why-card" data-reveal data-delay="5">
+        <div class="why-icon">📱</div>
+        <div class="why-title">Dijital Menü</div>
+        <div class="why-desc">QR kodla anında menüye ulaşın, fiyatları görün. Hızla ve kolayca sipariş verin.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     ŞUBELER
+═══════════════════════════════════════════════════ -->
+<section class="branches-section section" id="subeler">
+  <div class="container">
+    <div class="branches-header">
+      <div class="section-label" data-reveal style="justify-content:center;">📍 Lokasyonlar</div>
+      <h2 class="section-title" data-reveal data-delay="1">Şubelerimiz</h2>
+      <p class="section-desc" data-reveal data-delay="2">
+        Şubenizi seçin, dijital menüye ulaşın ve fiyatları anında görün.
+      </p>
+    </div>
+
+    <div class="branches-grid">
+
+      <!-- Ümraniye -->
+      <div class="branch-card" data-reveal data-delay="1">
+        <div class="branch-card-img">🏪</div>
+        <div class="branch-card-body">
+          <div class="branch-card-name">Ümraniye Şubesi</div>
+          <div class="branch-card-address">
+            📍 İstanbul, Ümraniye
+          </div>
+          <div class="branch-card-cta">
+            <a href="subeler/umraniye/index.html" class="btn btn-primary" style="font-size:0.82rem; padding:11px 20px;">
+              Menüyü Görüntüle →
+            </a>
+            <span class="branch-status-badge">🟢 Açık</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sultanbeyli -->
+      <div class="branch-card" data-reveal data-delay="2">
+        <div class="branch-card-img" style="background: linear-gradient(145deg, #d4f0e8, #a8dfc9);">🏪</div>
+        <div class="branch-card-body">
+          <div class="branch-card-name">Sultanbeyli Şubesi</div>
+          <div class="branch-card-address">
+            📍 İstanbul, Sultanbeyli
+          </div>
+          <div class="branch-card-cta">
+            <a href="subeler/sultanbeyli/index.html" class="btn btn-primary" style="font-size:0.82rem; padding:11px 20px;">
+              Menüyü Görüntüle →
+            </a>
+            <span class="branch-status-badge">🟢 Açık</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:36px;" data-reveal>
+      <a href="subeler.html" class="btn btn-outline">Tüm Şubeleri Gör →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     İLETİŞİM
+═══════════════════════════════════════════════════ -->
+<section class="contact-section section" id="iletisim">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <div class="section-label" data-reveal>📞 Ulaşın</div>
+        <h2 class="section-title" data-reveal data-delay="1">Bize Ulaşın</h2>
+        <p class="section-desc" data-reveal data-delay="2">
+          Sorularınız, önerileriniz veya toplu sipariş talepleriniz için bizimle iletişime geçin.
+        </p>
+
+        <div class="contact-items" data-reveal data-delay="3">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Ümraniye Şubesi</div>
+              <div class="contact-value">+90 216 XXX XX XX</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Sultanbeyli Şubesi</div>
+              <div class="contact-value">+90 216 XXX XX XX</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">E-posta</div>
+              <div class="contact-value">info@sariyerborekçisi.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⏰</div>
+            <div>
+              <div class="contact-label">Çalışma Saatleri</div>
+              <div class="contact-value">Her gün 07:00 – 22:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-map" data-reveal data-delay="2">
+        <div class="map-icon">🗺️</div>
+        <div style="font-weight:600; color: #4a4540;">Harita</div>
+        <div style="font-size:0.75rem;">Şube adreslerinizi buraya ekleyin</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon" aria-hidden="true">🥐</div>
+          <span class="footer-logo-name">Sarıyer Börekçisi</span>
+        </div>
+        <p class="footer-desc">
+          1989'dan bu yana İstanbul'da geleneksel börek, poğaça ve pide lezzetlerini 
+          sevgiyle hazırlıyoruz.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Sayfalar</div>
+        <div class="footer-links">
+          <a href="#anasayfa">Ana Sayfa</a>
+          <a href="#hakkimizda">Hakkımızda</a>
+          <a href="#neden-biz">Neden Biz?</a>
+          <a href="#subeler">Şubeler</a>
+          <a href="#iletisim">İletişim</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Şubeler</div>
+        <div class="footer-links">
+          <a href="subeler/umraniye/index.html">Ümraniye Şubesi</a>
+          <a href="subeler/sultanbeyli/index.html">Sultanbeyli Şubesi</a>
+        </div>
+        <div class="footer-col-title" style="margin-top:20px;">Çalışma Saatleri</div>
+        <div class="footer-links">
+          <span style="font-size:0.8rem;">Her gün 07:00 – 22:00</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2024 Sarıyer Börekçisi. Tüm hakları saklıdır.</span>
+      <span>Dijital menü <a href="#">Tezgah</a> tarafından</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════ -->
+<script>
+// Navbar scroll efekti
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+// Theme toggle
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  const isDark = document.body.classList.contains('dark');
+  themeToggle.textContent = isDark ? '☀️' : '🌙';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
+// Load saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark');
+  themeToggle.textContent = '☀️';
+} else {
+  themeToggle.textContent = '🌙';
+}
+
+// Hamburger menü
+const hamburger = document.getElementById('hamburger');
+const navMobile = document.getElementById('nav-mobile');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = hamburger.classList.toggle('open');
+  navMobile.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+  navMobile.setAttribute('aria-hidden', !isOpen);
+});
+
+// Mobil menü linklerine tıklayınca kapat
+navMobile.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    navMobile.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    navMobile.setAttribute('aria-hidden', 'true');
+  });
+});
+
+// Scroll Reveal (IntersectionObserver)
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+
+// Aktif nav linkini vurgula
+const sections = ['anasayfa', 'hakkimizda', 'neden-biz', 'subeler', 'iletisim'];
+const navLinks  = document.querySelectorAll('.nav-link');
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+      });
+    }
+  });
+}, { threshold: 0.4 });
+
+sections.forEach(id => {
+  const el = document.getElementById(id);
+  if (el) sectionObserver.observe(el);
+});
+
+// Şube durumu (canlı saat kontrolü)
+function updateBranchStatus() {
+  const now = new Date();
+  const t = now.getHours() * 60 + now.getMinutes();
+  const isOpen = t >= 7*60 && t < 22*60;
+  document.querySelectorAll('.branch-status-badge').forEach(b => {
+    b.textContent = isOpen ? '🟢 Açık' : '🔴 Kapalı';
+    b.style.background    = isOpen ? '#edfaf3' : '#fdf0ee';
+    b.style.color         = isOpen ? '#2d7a4f' : '#c0392b';
+    b.style.borderColor   = isOpen ? 'rgba(45,122,79,0.2)' : 'rgba(192,57,43,0.2)';
+  });
+}
+updateBranchStatus();
+</script>
+
+</body>
+</html>

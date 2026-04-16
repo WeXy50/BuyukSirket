@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#141210" />
+  <meta name="description" content="Sarıyer Börekçisi Sultanbeyli Şubesi — ürün listesi ve fiyatlar." />
+  <title>Menü — Sarıyer Börekçisi Sultanbeyli</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="menu-page">
+
+  <header class="topbar">
+    <a href="sultanbeyli.html" class="topbar-back" aria-label="Kategorilere dön">←</a>
+    <div class="topbar-info">
+      <div class="topbar-cat-name" id="topbar-cat-name">Menü</div>
+      <div class="topbar-cat-sub">Sultanbeyli Şubesi</div>
+    </div>
+    <div class="topbar-status" id="topbar-status">🟢 Açık</div>
+  </header>
+
+  <div class="menu-hero" id="menu-hero">
+    <div class="menu-hero-emoji" id="hero-emoji" aria-hidden="true">🥐</div>
+    <div class="menu-hero-overlay"></div>
+    <div class="menu-hero-title">
+      <h1 id="hero-title">Börekler</h1>
+      <p id="hero-desc">Günlük taze · Odun ateşi fırın</p>
+    </div>
+  </div>
+
+  <main class="menu-body" id="menu-body"></main>
+
+  <footer class="bottom-bar">
+    <div class="bottom-brand">
+      <strong>Sultanbeyli</strong> · Sarıyer Börekçisi
+    </div>
+    <div class="bottom-status">
+      <div class="status-dot" id="status-dot"></div>
+      <span id="current-time">--:--</span>
+    </div>
+  </footer>
+
+  <!-- Önce şube verisi, sonra render motoru -->
+  <script src="menu-data-sultanbeyli.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

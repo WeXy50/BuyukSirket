@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="Sarıyer Börekçisi Sultanbeyli Şubesi — Profesyonel, seçkin menü deneyimi." />
+  <title>Sultanbeyli Şubesi — Sarıyer Börekçisi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* PREMIUM REDESIGN STYLES */
+    :root {
+      --gold: #d4af37;
+      --gold-dark: #b8972e;
+      --gold-light: #f3e5ab;
+      --surface-glass: rgba(30, 30, 30, 0.4);
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --glow-color: rgba(212, 175, 55, 0.15);
+    }
+
+    body.index-page {
+      background-color: #050505;
+      background-image: 
+        radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    /* Ambient animated noise/texture */
+    body.index-page::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.03"/%3E%3C/svg%3E');
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Topbar Enhancements */
+    .branch-topbar {
+      position: relative;
+      z-index: 10;
+      padding: 24px 24px 0;
+      justify-content: space-between;
+    }
+    
+    .branch-back {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+    
+    .branch-back:hover, .branch-back:active {
+      color: var(--gold);
+    }
+    
+    .branch-badge {
+      background: rgba(46, 204, 113, 0.1);
+      border: 1px solid rgba(46, 204, 113, 0.2);
+      color: #2ecc71;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      box-shadow: 0 0 10px rgba(46, 204, 113, 0.1);
+      margin: 0; /* Reset */
+    }
+
+    /* Premium Header */
+    .index-header {
+      position: relative;
+      z-index: 10;
+      padding: 30px 24px 30px;
+      text-align: center;
+      animation: fadeInDown 0.8s ease-out forwards;
+    }
+    
+    .brand-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .logo-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1f1f1f, #0d0d0d);
+      border: 1px solid var(--gold);
+      box-shadow: 0 0 20px var(--glow-color), inset 0 0 15px rgba(0,0,0,0.5);
+      font-size: 1.8rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logo-circle:hover {
+      transform: scale(1.05) rotate(5deg);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.3), inset 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .logo-name {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      margin-bottom: 4px;
+    }
+
+    .logo-sub {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      opacity: 0.9;
+    }
+
+    .index-title {
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .index-title span {
+      font-weight: 700;
+      color: var(--gold);
+      background: linear-gradient(to right, var(--gold-light), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .index-subtitle {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 85%;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* Redesigned Glassmorphic Grid */
+    .categories-grid {
+      position: relative;
+      z-index: 10;
+      padding: 0 20px;
+      gap: 14px;
+    }
+
+    .cat-card {
+      height: auto;
+      min-height: 100px;
+      background: var(--surface-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-glass);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-decoration: none;
+    }
+
+    /* Gradient overlay for cards */
+    .cat-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 0;
+    }
+
+    .cat-card:hover, .cat-card:active {
+      transform: translateY(-4px) scale(1.02);
+      border-color: rgba(212, 175, 55, 0.4);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px var(--glow-color);
+    }
+    
+    .cat-card:hover::before, .cat-card:active::before {
+      opacity: 1;
+    }
+
+    .cat-card-icon-container {
+      width: 55px;
+      height: 55px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), transparent);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-right: 16px;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.4s ease, border-color 0.4s ease;
+      flex-shrink: 0;
+    }
+    
+    .cat-card:hover .cat-card-icon-container, .cat-card:active .cat-card-icon-container {
+      transform: scale(1.1) rotate(-5deg);
+      border-color: rgba(212, 175, 55, 0.5);
+    }
+
+    .cat-card-body {
+      padding: 0;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cat-card-name {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+
+    .cat-card-desc {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.4;
+    }
+
+    .cat-card-arrow {
+      position: relative;
+      right: auto; top: auto; transform: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 1;
+      margin-left: 12px;
+      flex-shrink: 0;
+    }
+
+    .cat-card:hover .cat-card-arrow, .cat-card:active .cat-card-arrow {
+      background: var(--gold);
+      color: #000;
+      border-color: var(--gold);
+      transform: translateX(4px);
+    }
+
+    .index-footer {
+      position: relative;
+      z-index: 10;
+      padding: 40px 24px 30px;
+      text-align: center;
+    }
+    
+    .index-footer p {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.75rem;
+      line-height: 1.6;
+    }
+    
+    .index-footer strong {
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    /* Keyframes */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="index-page">
+
+  <div class="branch-topbar">
+    <a href="subeler.html" class="branch-back" aria-label="Şube seçimine dön">← Şubeler</a>
+    <div class="branch-badge" id="branch-status">● Açık</div>
+  </div>
+
+  <header class="index-header">
+    <div class="brand-logo">
+      <div class="logo-circle">🥐</div>
+      <div class="logo-text">
+        <div class="logo-name">Sarıyer Börekçisi</div>
+        <div class="logo-sub">Sultanbeyli Şubesi</div>
+      </div>
+    </div>
+    <h1 class="index-title">Nefis lezzetleri<br/><span>keşfedin.</span></h1>
+    <p class="index-subtitle">Özenle hazırlanan taptaze ürünlerimiz sizi bekliyor.</p>
+  </header>
+
+  <main>
+    <div class="categories-grid">
+
+      <a href="sultanbeyli-menu.html?cat=borekler" class="cat-card" data-cat="borekler" aria-label="Börekler">
+        <div class="cat-card-icon-container">🥐</div>
+        <div class="cat-card-body">
+          <div class="cat-card-name">Börekler</div>
+          <div class="cat-card-desc">Su böreği, kol böreği, çıtır seçenekler</div>
+        </div>
+        <div class="cat-card-arrow" aria-hidden="true">→</div>
+      </a>
+
+      <a href="sultanbeyli-menu.html?cat=pogacalar" class="cat-card" data-cat="pogacalar" aria-label="Poğaçalar">
+        <div class="cat-card-icon-container">🫓</div>
+        <div class="cat-card-body">
+          <div class="cat-card-name">Poğaçalar</div>
+          <div class="cat-card-desc">Taptaze, sıcak, dumanı üstünde</div>
+        </div>
+        <div class="cat-card-arrow" aria-hidden="true">→</div>
+      </a>
+
+      <a href="sultanbeyli-menu.html?cat=pideler" class="cat-card" data-cat="pideler" aria-label="Pideler">
+        <div class="cat-card-icon-container">🫔</div>
+        <div class="cat-card-body">
+          <div class="cat-card-name">Pideler</div>
+          <div class="cat-card-desc">Özel hamur, zengin iç harç</div>
+        </div>
+        <div class="cat-card-arrow" aria-hidden="true">→</div>
+      </a>
+
+      <a href="sultanbeyli-menu.html?cat=acmalar" class="cat-card" data-cat="acmalar" aria-label="Açmalar ve Simitler">
+        <div class="cat-card-icon-container">🥖</div>
+        <div class="cat-card-body">
+          <div class="cat-card-name">Açmalar & Simitler</div>
+          <div class="cat-card-desc">Çıtır simit, pamuk gibi açmalar</div>
+        </div>
+        <div class="cat-card-arrow" aria-hidden="true">→</div>
+      </a>
+
+      <a href="sultanbeyli-menu.html?cat=icecekler" class="cat-card" data-cat="icecekler" aria-label="İçecekler">
+        <div class="cat-card-icon-container">☕</div>
+        <div class="cat-card-body">
+          <div class="cat-card-name">İçecekler</div>
+          <div class="cat-card-desc">Sıcak ve soğuk ferahlatıcı lezzetler</div>
+        </div>
+        <div class="cat-card-arrow" aria-hidden="true">→</div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="index-footer">
+    <p>Fiyatlara KDV dahildir.<br/><br/><strong>Sarıyer Börekçisi</strong>, bir Tezgah teknolojisidir.</p>
+  </footer>
+
+  <script>
+    const t = new Date().getHours() * 60 + new Date().getMinutes();
+    const badge = document.getElementById('branch-status');
+    // Eğer saat 22:00'den sonra veya 07:00'den önceyse
+    if (t < 7*60 || t >= 22*60) {
+      badge.textContent = '● Kapalı';
+      badge.style.color = '#ff4757';
+      badge.style.backgroundColor = 'rgba(255, 71, 87, 0.1)';
+      badge.style.borderColor = 'rgba(255, 71, 87, 0.2)';
+      badge.style.boxShadow = '0 0 10px rgba(255, 71, 87, 0.1)';
+    }
+  </script>
+</body>
+</html>

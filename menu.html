@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#141210" />
+  <meta name="description" content="Sarıyer Börekçisi ürün listesi ve fiyatları." />
+  <title>Menü — Sarıyer Börekçisi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="menu-page">
+ 
+  <!-- Desktop Sidebar (sadece büyük ekranda görünür) -->
+  <aside class="desktop-sidebar" id="desktop-sidebar" aria-label="Kategori navigasyonu">
+    <div class="sidebar-brand">
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-icon" aria-hidden="true">🥐</div>
+        <div>
+          <div class="sidebar-logo-name">Sarıyer Börekçisi</div>
+          <div class="sidebar-logo-sub">Dijital Menü</div>
+        </div>
+      </div>
+    </div>
+ 
+    <nav class="sidebar-nav" id="sidebar-nav" aria-label="Kategoriler">
+      <!-- JS ile doldurulur -->
+    </nav>
+ 
+    <div class="sidebar-footer">
+      <a href="index.html" class="sidebar-back-link">← Ana Sayfaya Dön</a>
+      <div class="sidebar-status">
+        <div class="status-dot" id="sidebar-status-dot"></div>
+        <span id="sidebar-time">--:--</span>
+        <span id="sidebar-open-badge">🟢 Açık</span>
+      </div>
+    </div>
+  </aside>
+ 
+  <!-- Mobile Topbar (sadece küçük ekranda görünür) -->
+  <header class="topbar" id="topbar">
+    <a href="index.html" class="topbar-back" aria-label="Kategorilere dön">←</a>
+    <div class="topbar-info">
+      <div class="topbar-cat-name" id="topbar-cat-name">Menü</div>
+      <div class="topbar-cat-sub" id="topbar-cat-sub">Sarıyer Börekçisi</div>
+    </div>
+    <div class="topbar-status" id="topbar-status">🟢 Açık</div>
+  </header>
+ 
+  <!-- Ana içerik alanı -->
+  <div class="menu-layout">
+ 
+    <!-- Hero Banner -->
+    <div class="menu-hero" id="menu-hero">
+      <div class="menu-hero-emoji" id="hero-emoji" aria-hidden="true">🥐</div>
+      <div class="menu-hero-overlay"></div>
+      <div class="menu-hero-title">
+        <h1 id="hero-title">Börekler</h1>
+        <p id="hero-desc">Günlük taze · Fırın çıkışı</p>
+      </div>
+    </div>
+ 
+    <!-- Desktop: Kategori sekmeleri (hero altında, yatay) -->
+    <div class="desktop-cat-tabs" id="desktop-cat-tabs">
+      <!-- JS ile doldurulur -->
+    </div>
+ 
+    <!-- Menü Gövdesi -->
+    <main class="menu-body" id="menu-body">
+      <!-- JS ile doldurulur -->
+    </main>
+ 
+    <!-- Mobile Alt Bar -->
+    <footer class="bottom-bar">
+      <div class="bottom-brand">
+        <strong>Sarıyer Börekçisi</strong> · Dijital Menü
+      </div>
+      <div class="bottom-status">
+        <div class="status-dot" id="status-dot"></div>
+        <span id="current-time">--:--</span>
+      </div>
+    </footer>
+ 
+  </div>
+ 
+  <script src="menu.js"></script>
+</body>
+</html>
+ 
